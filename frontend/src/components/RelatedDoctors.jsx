@@ -3,7 +3,7 @@ import { useContext, useState, useEffect } from 'react'
 import { AppContext } from '../context/AppContext'
 import { useNavigate } from 'react-router-dom'
 
-const RelatedDoctors = ({ docId, speciality }) => {
+const RelatedDoctors = ({ docId , speciality }) => {
     const { doctors } = useContext(AppContext)
     const navigate = useNavigate()
     const [relDoc, setRelDoc] = useState([])
@@ -11,7 +11,7 @@ const RelatedDoctors = ({ docId, speciality }) => {
     useEffect(() => {
         if (doctors.length > 0 && speciality) {
             // ✅ Fix: Use capital 'S' to match your data
-            const relatedDoctors = doctors.filter((doctor) => doctor._id !== docId && doctor.Speciality === speciality)
+            const relatedDoctors = doctors.filter((doctor) => doctor._id !== docId && doctor.speciality === speciality)
 
             console.log("Related Doctors:", relatedDoctors)
             setRelDoc(relatedDoctors)
@@ -32,7 +32,7 @@ const RelatedDoctors = ({ docId, speciality }) => {
                                 <p>Available</p>
                             </div>
                             <p className='text-gray-900 text-lg font-medium'>{item.name}</p>
-                            <p className='text-gray-600 text-sm'>{item.Speciality}</p> 
+                            <p className='text-gray-600 text-sm'>{item.speciality}</p>
                         </div>
                     </div>
                 ))}

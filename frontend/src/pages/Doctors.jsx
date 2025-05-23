@@ -14,7 +14,7 @@ const Doctors = () => {
   const { doctors } = useContext(AppContext);
 
   const applyFilter = () => {
-    if (speciality) {
+    if (speciality) { 
       setfilterDoc(doctors.filter(doc => doc.speciality === speciality))
     }
     else {

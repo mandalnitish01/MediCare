@@ -28,7 +28,7 @@ const Footer = () => {
                     <p className='text-xl font-medium mb-5'>GET IN TOUCH</p>
                     <ul className='flex flex-col gap-2 text-gray-600'>
                         <li>+123-3435-34342</li>
-                        <li>prescripto123@gmail.com</li>
+                        <li>medicare123@gmail.com</li>
                     </ul>
 
 
@@ -37,7 +37,7 @@ const Footer = () => {
             {/* -----------------  Copyright Text ---------------*/}
             <div>
                 <hr />
-                <p className='text-center py-5 text-sm text-gray-500'>Copyright © 2023 Prescripto. All rights reserved.</p>
+                <p className='text-center py-5 text-sm text-gray-500'>Copyright © 2023 medicare. All rights reserved.</p>
             </div>
         </div>
     )
